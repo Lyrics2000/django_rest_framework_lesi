@@ -10,7 +10,7 @@ from config.utils import BASE_DIR
 SECRET_KEY = 'u3njgw65p0r-*q2g7rkkj^o1h)^59zwqydcmkk(btxonv_f(c1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-
+ALLOWED_HOSTS = ['warm-dusk-61066.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -22,11 +22,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'mainapp'
+    'mainapp',
+    'storages',
+
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',

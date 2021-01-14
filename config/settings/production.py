@@ -3,7 +3,7 @@ import os
 
 
 DEBUG = False
-ALLOWED_HOSTS = []
+
 
 DATABASES = {
     'default': {
@@ -45,4 +45,4 @@ STATICFILES_DIRS = [
 ]
 STATIC_URL = 'https://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN, AWS_LOCATION)
 STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-DEFAULT_FILE_STORAGE = 'fishsell.storage_backends.MediaStorage' 
+DEFAULT_FILE_STORAGE = 'config.storage_backends.MediaStorage' 

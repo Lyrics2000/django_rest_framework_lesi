@@ -5,7 +5,7 @@ import os
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 DEBUG = True
 
-ALLOWED_HOSTS = []
+
 
 DATABASES = {
     'default': {
