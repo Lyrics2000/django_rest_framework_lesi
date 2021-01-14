@@ -7,7 +7,7 @@ from config.utils import BASE_DIR
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'u3njgw65p0r-*q2g7rkkj^o1h)^59zwqydcmkk(btxonv_f(c1'
+SECRET_KEY = 'p4NrWqfKvZYWhVU8qUUWhbE'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 ALLOWED_HOSTS = ['warm-dusk-61066.herokuapp.com','127.0.0.1']
