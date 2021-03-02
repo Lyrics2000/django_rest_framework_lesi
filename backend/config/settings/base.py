@@ -1,6 +1,7 @@
 
 from pathlib import Path
 import os
+import django_heroku
 
 from config.utils import BASE_DIR 
 # Quick-start development settings - unsuitable for production
@@ -103,3 +104,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 
+django_heroku.settings(locals())
